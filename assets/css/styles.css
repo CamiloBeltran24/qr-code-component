@@ -1,0 +1,69 @@
+:root {
+    --slate--900: rgb(31, 49, 79);
+    --slate--900--opacity: rgba(31, 49, 79, 0.25);
+    --slate--500: #68778D;
+    --slate--300: #D5E1EF;
+    --white: #FFFFFF;
+    --letter-spacing: 0.2px;
+    --primary-font: "Outfit", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--slate--300);
+}
+
+.qr-container {
+    width: 320px;
+    max-width: 320px;
+    padding: 16px 16px 40px 16px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.qr-container figure {
+    width: 100%;
+    height: 288px;
+    max-height: 288px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.qr-container figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.qr-container .qr-text {
+    text-align: center;
+    padding: 0 12px;
+}
+
+h1 {
+    font-weight: 900;
+    color: var(--slate--900);
+    font-size: 22px;
+    line-height: 1.2;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    filter: drop-shadow(0px 4px 4px var(--slate--900--opacity) );
+    stroke: #000;
+    stroke-width: 1px;
+}
+.qr-container .qr-text p {
+    line-height: 1.4;
+    font-size: 15px;
+    color: var(--slate--500);
+    font-weight: 400;
+}
